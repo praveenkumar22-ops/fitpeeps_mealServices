@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import meal_service.dtos.FoodItems;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -27,6 +28,7 @@ public class Meal {
     private Float mealCalorie;
     @ElementCollection
     private List<Food> foodNames;
+
     @ElementCollection
     private List<Nutrient> mealMacros;
 
@@ -39,6 +41,7 @@ public class Meal {
     protected void onCreate(){
         this.createdAt=LocalDateTime.now();
         this.updatedAt=LocalDateTime.now();
+
     }
 
     @PreUpdate

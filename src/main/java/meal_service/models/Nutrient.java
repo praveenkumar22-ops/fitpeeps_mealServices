@@ -11,5 +11,6 @@ import lombok.Setter;
 @Embeddable
 public class Nutrient {
     private String name;
-    private Float value;
+    private Double value;
+    private Enum unit;
 }
