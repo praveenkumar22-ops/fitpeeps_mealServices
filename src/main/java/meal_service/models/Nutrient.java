@@ -12,5 +12,5 @@ import lombok.Setter;
 public class Nutrient {
     private String name;
     private Double value;
-    private Enum unit;
+    private String  unit;
 }

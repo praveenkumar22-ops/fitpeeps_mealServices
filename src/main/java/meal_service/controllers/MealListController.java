@@ -1,8 +1,8 @@
 package meal_service.controllers;
 
 import lombok.RequiredArgsConstructor;
-import meal_service.dtos.MealListsResponse;
-import meal_service.dtos.MealResponse;
+import meal_service.dtos.meals.MealListsResponse;
+import meal_service.dtos.meals.MealResponse;
 import meal_service.services.MealService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/meals")

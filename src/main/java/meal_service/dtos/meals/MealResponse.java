@@ -1,5 +1,6 @@
-package meal_service.dtos;
+package meal_service.dtos.meals;
 
+import meal_service.dtos.foods.FoodItem;
 import meal_service.models.Nutrient;
 
 import java.time.LocalDate;

@@ -1,8 +1,8 @@
 package meal_service.controllers;
 
 import lombok.RequiredArgsConstructor;
-import meal_service.dtos.MealRequest;
-import meal_service.dtos.MealResponse;
+import meal_service.dtos.meals.MealRequest;
+import meal_service.dtos.meals.MealResponse;
 import meal_service.services.MealService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,14 +1,13 @@
 package meal_service.services;
 
 import lombok.RequiredArgsConstructor;
-import meal_service.dtos.FoodItem;
-import meal_service.dtos.MealRequest;
-import meal_service.dtos.MealResponse;
+import meal_service.dtos.foods.FoodItem;
+import meal_service.dtos.meals.MealRequest;
+import meal_service.dtos.meals.MealResponse;
 import meal_service.models.Food;
 import meal_service.models.Meal;
 import meal_service.models.Nutrient;
 import meal_service.models.Unit;
-import meal_service.repos.FoodRepo;
 import meal_service.repos.MealRepo;
 import org.springframework.stereotype.Service;
 

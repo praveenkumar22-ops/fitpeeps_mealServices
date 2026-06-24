@@ -1,10 +1,9 @@
 package meal_service.services;
 
 import lombok.RequiredArgsConstructor;
-import meal_service.dtos.FoodItem;
-import meal_service.dtos.FoodRequest;
-import meal_service.dtos.FoodResponse;
-import meal_service.dtos.FoodUpdateRequest;
+import meal_service.dtos.foods.FoodRequest;
+import meal_service.dtos.foods.FoodResponse;
+import meal_service.dtos.foods.FoodUpdateRequest;
 import meal_service.models.Food;
 import meal_service.models.FoodType;
 import meal_service.repos.FoodRepo;

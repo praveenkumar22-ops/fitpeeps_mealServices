@@ -17,9 +17,11 @@ public class MealItem {
     private Long mealItemId;
 
     @ManyToOne
+    @JoinColumn( name = "mealId")
     private Meal meal;
 
     @ManyToOne
+    @JoinColumn( name = "foodId")
     private Food food;
 
     private Double quantity;

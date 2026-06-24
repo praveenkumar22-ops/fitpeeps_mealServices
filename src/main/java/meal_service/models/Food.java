@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import tools.jackson.databind.node.DoubleNode;
 
 import java.time.LocalDateTime;
 
@@ -16,16 +17,16 @@ public class Food {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long foodId;
-//    private Long foodItemId;
-    private Enum foodType;
+    @Enumerated(EnumType.STRING)
+    private FoodType foodType;
+
     private String name;
-    private Enum unit;
-    private Double energyPer100g;
-    private Double energyPer100ml;
-    private Double proteinPer100g;
-    private Double fatsPer100g;
-    private Double carbsPer100g;
-    private Double proteinPer100ml;
-    private Double fatsPer100ml;
-    private Double carbsPer100ml;
+
+    @Enumerated(EnumType.STRING)
+    private Unit unit;
+
+    private Double energy;
+    private Double protein;
+    private Double fats;
+    private Double carbs;
 }

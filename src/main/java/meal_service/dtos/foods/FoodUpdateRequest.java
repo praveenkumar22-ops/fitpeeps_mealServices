@@ -1,4 +1,4 @@
-package meal_service.dtos;
+package meal_service.dtos.foods;
 
 public record FoodUpdateRequest(
         Double energyPer100g,
