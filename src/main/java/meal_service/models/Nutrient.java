@@ -4,6 +4,7 @@ import jakarta.persistence.Embeddable;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import meal_service.models.enums.Unit;
 
 @Getter
 @Setter
@@ -12,5 +13,4 @@ import lombok.Setter;
 public class Nutrient {
     private String name;
     private Double value;
-    private String  unit;
 }

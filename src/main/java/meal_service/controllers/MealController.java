@@ -25,7 +25,7 @@ public class MealController {
 
     @GetMapping("/{userId}/{mealId}")
     public ResponseEntity<?> getMealDetails(@PathVariable Long userId, @PathVariable Long mealId){
-        Optional<MealResponse> foundMeal=mealService.getMealDetails(userId,mealId);
+        Optional<MealResponse> foundMeal=mealService.getMealDetails(mealId);
 
         return foundMeal.isPresent() ?
                 new ResponseEntity<>(foundMeal.get(),HttpStatus.OK):

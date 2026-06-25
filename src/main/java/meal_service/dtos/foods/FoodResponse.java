@@ -8,6 +8,5 @@ public record FoodResponse (
         Double protein,
         Double fats,
         Double carbs
-
 ){
 }

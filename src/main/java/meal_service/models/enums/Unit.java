@@ -1,4 +1,4 @@
-package meal_service.models;
+package meal_service.models.enums;
 
 public enum Unit {
     GRAMS,

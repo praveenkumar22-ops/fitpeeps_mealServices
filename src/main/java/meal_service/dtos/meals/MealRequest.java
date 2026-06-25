@@ -4,5 +4,6 @@ import meal_service.dtos.foods.FoodItem;
 
 import java.util.List;
 
-public record MealRequest(String mealType, List<FoodItem> foodItems, Float mealCalorie) {
+public record MealRequest(String mealType,
+                          List<FoodItem> foodItems) {
 }

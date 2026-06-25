@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import meal_service.models.enums.MealType;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -22,7 +23,7 @@ public class Meal {
     private LocalDate mealDate;
 
     @Enumerated(EnumType.STRING)
-    private MealType  mealType;
+    private MealType mealType;
     private Double mealCalorie;
     @OneToMany(
             mappedBy = "meal",
@@ -30,6 +31,7 @@ public class Meal {
             orphanRemoval = true
     )
     private List<MealItem> mealItems;
+    private List<Nutrient> mealMacros;
 
 
     @Column(nullable = false,updatable = false)

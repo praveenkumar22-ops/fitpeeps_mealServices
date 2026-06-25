@@ -4,8 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
+import meal_service.models.enums.FoodType;
+import meal_service.models.enums.Unit;
 
 @Entity
 @Getter
@@ -27,5 +27,5 @@ public class MealItem {
     private Double quantity;
 
     @Enumerated(EnumType.STRING)
-    private Unit foodType;
+    private FoodType foodType;
 }
